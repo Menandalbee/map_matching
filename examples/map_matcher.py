@@ -177,9 +177,9 @@ def map_match(conn, road_table_name, sequence, search_radius, max_route_distance
     """Match the sequence and return a list of candidates."""
 
     # Prepare the network graph and the candidates along the sequence
-    edges = query_edges_in_sequence_bbox(conn, road_table_name, sequence, search_radius)
+    edges = query_edges_in_sequence_bbox(conn, road_table_name, sequence, search_radius)#这是用来构建地图计算最短路径的
     network = build_road_network(edges)
-    candidates = query_candidates(conn, road_table_name, sequence, search_radius)
+    candidates = query_candidates(conn, road_table_name, sequence, search_radius)#这是候选路段
 
     # If the route distance between two consive measurements are
     # longer than `max_route_distance` in meters, consider it as a

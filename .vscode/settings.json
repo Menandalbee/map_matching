@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "D:\\Anaconda\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.pep8Enabled": false
+}
